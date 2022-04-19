@@ -1,6 +1,9 @@
 #! /bin/bash
 
+sudo dnf install google-roboto-fonts google-roboto-mono-fonts;
 sudo dnf copr enable tonyjames/plata-theme &;
+
+sudo dnf install flatpak && flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo;
 
 echo 'Installing Visual Studio Code........';
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc;
